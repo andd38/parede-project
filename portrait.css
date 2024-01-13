@@ -1,0 +1,49 @@
+.card1{
+    display: flex;
+    flex-direction: column;
+
+}
+.container{
+   max-width: 300px;
+}
+input[type = text]{
+    max-width: 250px;
+    height: 35px;
+    outline: none;
+    border: 1px solid ;
+    font-size: 18px;
+    border-radius: 5px;
+    padding-left: 15px;
+    
+}
+
+.input-value{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.input-value > p{
+    text-align: center;
+}
+.card1>.input-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+input[type=reset],input[type=button]{
+    margin: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    max-width: 270px;
+    height: 44px;
+    background-color: rgb(47, 143, 111);
+    margin-bottom: 15px;
+    color: white;
+}
+.card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
