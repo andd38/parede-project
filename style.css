@@ -36,7 +36,7 @@ main h3{
     display: flex;
     justify-content: center;
 }
-input[type = text]{
+input[type = number]{
     width: 400px;
     height: 35px;
     outline: none;
@@ -92,6 +92,23 @@ header{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    
     box-shadow: 0px 0px 5px 0px black;
     padding: 15px;
+}
+nav{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    padding: auto;
+}
+.material-symbols-outlined{
+    color: rgb(151, 16, 192);
+    
+}
+.fa-whatsapp{
+    font-size: 21px;
+    
+    color: green;
+    
 }

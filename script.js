@@ -1,13 +1,10 @@
-window.addEventListener('load',function(e){
-    e.preventDefault();
-    ValoresArmazenados;
-});
+window.addEventListener('load',ValoresArmazenados);
 
 const btnCalc = document.querySelector("#botao")
 btnCalc.addEventListener('click',(e)=>{
     e.preventDefault();
     calcular();
-    console.log('ola');
+   
     
 });
 
@@ -25,7 +22,11 @@ function calcular(){
     if(!isNaN(largura)  && !isNaN(altura)){
 
         document.querySelector('#resultado').innerHTML = result.toFixed(2);
+        localStorage.setItem('width',largura);
+        localStorage.setItem('height',altura);
         localStorage.setItem('resultado',result.toFixed(2));
+       
+
 
     } else{
 
@@ -42,8 +43,9 @@ function ValoresArmazenados(){
 
     document.querySelector('#height').value=alturaArmazenada;
     document.querySelector('#width').value= larguraArmazenada ;
-    document.querySelector('#resultado').value=resultadoArmazenado ;
+    document.querySelector('#resultado').innerHTML=resultadoArmazenado ;
 
+   
    
 }
 
@@ -54,6 +56,8 @@ function Limpar(){
 
     let resultado = "Aqui aparecerá  o resultado do seu calculo, indicando quantos baldes de tinta serão necessarios para pintar a parede";
     document.querySelector('#resultado').innerHTML = resultado;
+
+    localStorage.clear();
     
 
 }
