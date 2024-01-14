@@ -2,7 +2,7 @@
 body{
     margin: 0px;
     background-image: url(img/wall2.jpg);
-    font-family:'Roboto' ;
+    font-family:'Roboto';
 }
 main{
     display: flex;
