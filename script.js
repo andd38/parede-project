@@ -5,7 +5,8 @@ btnCalc.addEventListener('click',(e)=>{
     e.preventDefault();
     
     calcular();
-    
+    let larguraLimpa=  document.querySelector('#width').value = '';
+    let alturaLimpa =  document.querySelector('#height').value='';
     
 });
 
