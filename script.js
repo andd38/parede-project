@@ -26,8 +26,7 @@ function calcular(){
     }
     else{
         document.querySelector('#resultado').innerHTML = ` a quantidade de baldes necessarias para pintar a parede é ${result.toFixed(2)}`;
-        localStorage.setItem('width',largura);
-        localStorage.setItem('height',altura);
+       
         localStorage.setItem('resultado',result.toFixed(2));
 
     }
@@ -37,12 +36,10 @@ function calcular(){
 
 function ValoresArmazenados(){
     
-    const alturaArmazenada = localStorage.getItem('altura');
-    const larguraArmazenada = localStorage.getItem('largura');
+ 
     const resultadoArmazenado = localStorage.getItem('resultado');
 
-    document.querySelector('#height').value=alturaArmazenada;
-    document.querySelector('#width').value= larguraArmazenada ;
+
     
     document.querySelector('#resultado').innerHTML = `A quantidade de baldes necessários para pintar a parede é ${resultadoArmazenado}`;
 
